@@ -1,74 +1,111 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    
-}
-
-.container {
-    min-height: 100vh;
-}
-
-.navbar {
-    position: fixed;
+    font-family: "SF Pro Display", sans-serif;
     width: 100%;
-    z-index: 100;
-    background-color: black;
-    transition: all 0.3s ease;
+    height: 100%;
+
+    .iphone-16-pro-bg {
+        background: url('./assests/iphone16bg.png');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+    }
+
+    .textbox {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .iphone-16-pro-heading {
+        color: white;
+        font-size: 50px;
+        line-height: 1.08349;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: -.002em;
+        font-family: "SF Pro Display", sans-serif;
+        margin: 0px;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .iphone-16-pro-text {
+        color: white;
+        font-size: 21px;
+        line-height: 1.21053;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: .012em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        margin: 0px;
+    }
+
+    .textbox2{
+        position: absolute;
+        margin-top: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iphone-16-pro-learn-more {
+        background-color: #0071e3;
+        color: white;
+        line-height: 1.42859;
+        font-weight: 400;
+        font-size: 14px;
+        border: none;
+        border-radius: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: "SF Pro Display", sans-serif;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        letter-spacing: -.016em;
+
+    }
+
+    .iphone-16-pro-buy {
+        font-size: 14px;
+        background-color: rgba(0,0,0,0);
+        color:#2997ff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #2997ff;
+        font-family: "SF Pro Display", sans-serif;
+        line-height: 1.42859;
+        border-radius: 50px;
+        font-weight: 400;
+        letter-spacing: -.016em;
+        min-width: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .iphone-16-pro-text2 {
+        font-size: 12px;
+        margin-top: 16px;
+        line-height: 1.28577;
+        font-weight: 400;
+        letter-spacing: -.016em;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        color:#86868b;
+    }
+
+
 }
-
-.navbar.scrolled {
-    background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(2px);
-}
-
-.navlinks {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 8px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-
-}
-
-
-.navlinks a{
-    color: #D6D6D6;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: color 0.2s ease
-}
-
-.navlinks a:hover{
-    color: white;
-}
-
-.iphone-16-pro {
-    padding: 50px;
-    padding-top: 30%;
-    height: 100vh;
-    background-image: url('./assests/iphone-16-pro.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-
-}
-
-
-
-
-
-
