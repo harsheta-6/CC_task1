@@ -24,6 +24,8 @@ html, body {
     /*---navigation bar starting here-------------------------*/
 
     .navbar {
+        position: relative;
+        top: 0;
         display: flex;
         margin-bottom: 0;
         margin: 0;
@@ -234,7 +236,7 @@ html, body {
 
     .textbox3 {
         position: absolute;
-        top: 10%;
+        top: 8%;
         left: 40%;
         text-align: center;
         display: flex;
@@ -246,7 +248,7 @@ html, body {
 
     .iphone-16-heading {
         color: white;
-        font-size: 59px;
+        font-size: 57px;
         line-height: 0.7;
         text-align: center;
         font-weight: 600;
@@ -259,7 +261,7 @@ html, body {
 
     .iphone-16-text {
         color: white;
-        font-size: 29px;
+        font-size: 27px;
         line-height: 1.21053;
         text-align: center;
         font-weight: 400;
@@ -270,7 +272,7 @@ html, body {
 
     .textbox4{
         position: absolute;
-        margin-top: 340%;
+        margin-top: 370%;
         text-align: center;
         justify-content: center;
         align-items: center;
