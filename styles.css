@@ -13,9 +13,6 @@ html, body {
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
     gap: 24px;
@@ -101,6 +98,7 @@ html, body {
         width: 100vw;
         margin-top: 0;
         padding-top: 0;
+        cursor: pointer;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -112,6 +110,7 @@ html, body {
         position: absolute;
         top: 13%;
         left: 40%;
+        cursor: pointer;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -146,7 +145,7 @@ html, body {
 
     .textbox2{
         position: absolute;
-        margin-top: 80%;
+        margin-top: 285%;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -157,20 +156,22 @@ html, body {
         color: white;
         line-height: 1.42859;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 17px;
         border: none;
         border-radius: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
         font-family: "Roboto", sans-serif;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         letter-spacing: -.016em;
+        margin-right: 10px;
+        margin-bottom: 7px;
 
     }
 
     .iphone-16-pro-buy {
-        font-size: 14px;
+        font-size: 17px;
         background-color: rgba(0,0,0,0);
         color:#2997ff;
         border-width: 1px;
@@ -182,14 +183,14 @@ html, body {
         font-weight: 400;
         letter-spacing: -.016em;
         min-width: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 11px;
+        padding-bottom: 11px;
     }
 
     .iphone-16-pro-text2 {
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 16px;
         line-height: 1.28577;
         font-weight: 400;
