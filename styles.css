@@ -21,6 +21,8 @@ html, body {
         cursor: pointer;
     }
 
+    /*---navigation bar starting here-------------------------*/
+
     .navbar {
         display: flex;
         margin-bottom: 0;
@@ -89,6 +91,8 @@ html, body {
         height: 18px;
         margin-left: 19px;
     }
+
+/*---navigation bar ending here------------------*/
 
     /*---iphone 16 pro starting here------------------*/
 
@@ -208,6 +212,11 @@ html, body {
         color:#86868b;
     }
 
+    .border1{
+        background-color: white;
+        height: 15px;
+    }
+
     /*---iphone 16 pro ending here---------------------*/
 
     /*---iphone 16 starting here-------------------------*/
@@ -220,6 +229,7 @@ html, body {
         background-repeat: no-repeat;
         position: relative;
         background-position: center;
+
     }
 
     .textbox3 {
@@ -312,6 +322,11 @@ html, body {
         color:#86868b;
     }
 
+    .border2{
+        background-color: white;
+        height: 15px;
+    }
+
 /*---iphone 16 ending here----------------------*/
 
 /*---apple watch starting here--------------------*/
@@ -381,6 +396,11 @@ html, body {
         padding-top: 7px;
         padding-bottom: 7px;
     }
+
+    .border3{
+        background-color: white;
+        height: 15px;
+    }
     
 /*---apple watch ending here--------------------*/
 
@@ -405,6 +425,11 @@ html, body {
         background-image: url('./assests/apple-watch-extra.png');
     } 
 
+    .border4{
+        background-color: white;
+        height: 15px;
+    }
+
     .additional-info {
         background-color: #F5F5F7;
         padding-top: 20px;
@@ -427,6 +452,11 @@ html, body {
         margin-bottom: 0.8rem;
         margin-left: 300px;
         margin-right: 300px;
+    }
+
+    .border5{
+        background-color: white;
+        height: 15px;
     }
         
 
