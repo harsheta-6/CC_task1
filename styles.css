@@ -26,6 +26,7 @@ html, body {
 
     .navbar {
         display: flex;
+        margin-bottom: 0;
         justify-content: center;
         padding-top: 15px;
         background-color: black;
@@ -52,8 +53,7 @@ html, body {
     .navbar ul li:hover{
         cursor: pointer;
         color: white;
-        transition: 0.6s ease;
-        transition: 1s ease-out;
+        transition: color 0.5s ease-in-out;
     }
 
     .offers{
@@ -68,6 +68,7 @@ html, body {
         padding-bottom: 15px;
         gap: 5px;
         padding-top: 15px;
+        margin-bottom: 0;
     }
 
     .offers .shop{
@@ -96,6 +97,8 @@ html, body {
         background: url('./assests/iphone-16-pro-bgg.png');
         min-height: 100vh;
         width: 100vw;
+        margin-top: 0;
+        padding-top: 0;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -104,7 +107,7 @@ html, body {
 
     .textbox {
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 40%;
         text-align: center;
         display: flex;
@@ -116,10 +119,10 @@ html, body {
 
     .iphone-16-pro-heading {
         color: white;
-        font-size: 50px;
+        font-size: 55px;
         line-height: 1.08349;
         text-align: center;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: -.002em;
         font-family: "Roboto", sans-serif;
         margin: 0px;
@@ -129,11 +132,11 @@ html, body {
 
     .iphone-16-pro-text {
         color: white;
-        font-size: 21px;
-        line-height: 1.21053;
+        font-size: 27px;
+        line-height: 0.5;
         text-align: center;
         font-weight: 400;
-        letter-spacing: .012em;
+        letter-spacing: .01em;
         font-family: "Roboto", sans-serif;
         margin: 0px;
     }
