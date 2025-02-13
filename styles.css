@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -16,6 +22,72 @@ html, body {
 
     button {
         cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        background-color: black;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar ul{
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar ul li{
+        margin-left: 35px;
+        color: #CCCCCC;
+        font-family: "Roboto",sans-serif;
+        font-size: 13px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .navbar ul li:hover{
+        cursor: pointer;
+        color: white;
+        transition: 0.6s ease;
+        transition: 1s ease-out;
+    }
+
+    .offers{
+        width: 100vw;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 14px;
+        background-color: #1D1D1F;
+        color: white;
+        display: flex;
+        padding-left: 400px;
+        padding-bottom: 15px;
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    .offers .shop{
+        color: #006DDA;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .offers .shop:hover{
+        text-decoration: underline;
+    }
+
+
+    .navbar .logo img{
+        height: 18px;
+    }
+
+    .navbar .nav-icons img{
+        height: 18px;
+        margin-left: 19px;
     }
 
     /*---iphone 16 pro starting here------------------*/
@@ -49,7 +121,7 @@ html, body {
         text-align: center;
         font-weight: 600;
         letter-spacing: -.002em;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0px;
         padding: 16px;
         gap: 12px;
@@ -62,7 +134,7 @@ html, body {
         text-align: center;
         font-weight: 400;
         letter-spacing: .012em;
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0px;
     }
 
@@ -84,7 +156,7 @@ html, body {
         border-radius: 50px;
         padding-left: 15px;
         padding-right: 15px;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         padding-top: 7px;
         padding-bottom: 7px;
         letter-spacing: -.016em;
@@ -98,7 +170,7 @@ html, body {
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         line-height: 1.42859;
         border-radius: 50px;
         font-weight: 400;
@@ -116,7 +188,7 @@ html, body {
         line-height: 1.28577;
         font-weight: 400;
         letter-spacing: -.016em;
-        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         color:#86868b;
     }
 
@@ -153,7 +225,7 @@ html, body {
         text-align: center;
         font-weight: 600;
         letter-spacing: -.002em;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0px;
         padding: 16px;
         gap: 12px;
@@ -166,7 +238,7 @@ html, body {
         text-align: center;
         font-weight: 400;
         letter-spacing: .012em;
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0px;
     }
 
@@ -188,7 +260,7 @@ html, body {
         border-radius: 50px;
         padding-left: 15px;
         padding-right: 15px;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         padding-top: 7px;
         padding-bottom: 7px;
         letter-spacing: -.016em;
@@ -202,7 +274,7 @@ html, body {
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         line-height: 1.42859;
         border-radius: 50px;
         font-weight: 400;
@@ -220,7 +292,7 @@ html, body {
         line-height: 1.28577;
         font-weight: 400;
         letter-spacing: -.016em;
-        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         color:#86868b;
     }
 
@@ -254,7 +326,7 @@ html, body {
         text-align: center;
         font-weight: 400;
         letter-spacing: .012em;
-        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0px;
     }
 
@@ -268,7 +340,7 @@ html, body {
         border-radius: 50px;
         padding-left: 15px;
         padding-right: 15px;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         padding-top: 7px;
         padding-bottom: 7px;
         letter-spacing: -.016em;
@@ -282,7 +354,7 @@ html, body {
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
-        font-family: "SF Pro Display", sans-serif;
+        font-family: "Roboto", sans-serif;
         line-height: 1.42859;
         border-radius: 50px;
         font-weight: 400;
@@ -317,8 +389,33 @@ html, body {
         background-image: url('./assests/apple-watch-extra.png');
     } 
 
+    .additional-info {
+        background-color: #F5F5F7;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
 
+    }
+
+    .info {
+        font-size: 13px;
+        line-height: 1.3333733333;
+        font-weight: 400;
+        color: #6C6C6C;
+        letter-spacing: -0.01em;
+        font-family: "Roboto", sans-serif;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
         
+
+
+   
     
 
 }
