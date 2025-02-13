@@ -224,9 +224,9 @@ html, body {
         color:#86868b;
     }
 
-        /*---iphone 16 ending here----------------------*/
+/*---iphone 16 ending here----------------------*/
 
-        /*---apple watch starting here--------------------*/
+/*---apple watch starting here--------------------*/
 
     .apple-watch-bg {
         background: url('./assests/apple-watch-10-bg.png');
@@ -240,10 +240,11 @@ html, body {
 
     .textbox5{
         position: absolute;
-        margin-top: 80%;
+        margin-top: 15%;
         text-align: center;
         justify-content: center;
         align-items: center;
+        margin-left: 50%;
     }
     
     .apple-watch-text {
@@ -293,6 +294,30 @@ html, body {
         padding-bottom: 7px;
     }
     
+/*---apple watch ending here--------------------*/
 
+/*---apple extra starting here--------------------*/
+
+    .image-flex{
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        
+    }
+
+    .image{
+        width: calc(50%-24px);
+        max-width: 50%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('./assests/apple-watch-extra.png');
+    } 
+
+    
 
 }
