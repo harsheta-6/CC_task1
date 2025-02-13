@@ -361,7 +361,7 @@ html, body {
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 44%;
+        margin-left: 43.5%;
     }
     
     .apple-watch-text {
@@ -443,12 +443,30 @@ html, body {
     }
 
     .image{
-        width: calc(50%-24px);
-        height: 600px;
+        width: 48%;
+        height: 80vh;
         background-repeat: no-repeat;
-        object-fit: fit;
+        background-size:cover;
         background-image: url('./assests/apple-watch-extra.png');
-    } 
+    }
+    
+    .image-2{
+        width: 48%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./assests/apple-valentine.png');
+    }
+
+    .image-3{
+        width: 48%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./assests/macbook-air.png');
+    }
 
     .border4{
         background-color: white;
