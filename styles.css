@@ -311,13 +311,14 @@ html, body {
 
     .image{
         width: calc(50%-24px);
-        max-width: 50%;
         height: 600px;
         background-repeat: no-repeat;
-        background-size: cover;
+        object-fit: fit;
         background-image: url('./assests/apple-watch-extra.png');
     } 
 
+
+        
     
 
 }
