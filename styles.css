@@ -24,7 +24,7 @@ html, body {
     /*---navigation bar starting here-------------------------*/
 
     .navbar {
-        position: relative;
+        position: fixed;
         top: 0;
         display: flex;
         margin-bottom: 0;
@@ -62,6 +62,7 @@ html, body {
     .offers{
         width: 100vw;
         text-align: center;
+        margin-top: 43px;
         padding-top: 20px;
         font-size: 14px;
         background-color: #1D1D1F;
@@ -356,17 +357,17 @@ html, body {
 
     .textbox5{
         position: absolute;
-        margin-top: 15%;
+        margin-top: 13%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 50%;
+        margin-left: 44%;
     }
     
     .apple-watch-text {
         color: black;
-        font-size: 21px;
-        line-height: 1.21053;
+        font-size: 28px;
+        line-height: 2.5;
         text-align: center;
         font-weight: 400;
         letter-spacing: .012em;
@@ -379,20 +380,25 @@ html, body {
         color: white;
         line-height: 1.42859;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 17px;
         border: none;
         border-radius: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-family: "Roboto", sans-serif;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         letter-spacing: -.016em;
+        margin-right: 10px;
+        margin-bottom: 7px;
+    }
 
+    .apple-watch-learn-more:hover{
+        background-color: #167ce3;
     }
 
     .apple-watch-buy {
-        font-size: 14px;
+        font-size: 17px;
         background-color: rgba(0,0,0,0);
         color:#2997ff;
         border-width: 1px;
@@ -404,10 +410,16 @@ html, body {
         font-weight: 400;
         letter-spacing: -.016em;
         min-width: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .apple-watch-buy:hover{
+        background-color:#0071e3;
+        border-color: #0071e3;
+        color: white;
     }
 
     .border3{
