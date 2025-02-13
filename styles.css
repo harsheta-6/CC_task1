@@ -27,6 +27,8 @@ html, body {
     .navbar {
         display: flex;
         margin-bottom: 0;
+        margin: 0;
+        padding: 0;
         justify-content: center;
         padding-top: 15px;
         background-color: black;
@@ -103,11 +105,12 @@ html, body {
         background-repeat: no-repeat;
         position: relative;
         background-position: center;
+        display: block;
     }
 
     .textbox {
         position: absolute;
-        top: 10%;
+        top: 13%;
         left: 40%;
         text-align: center;
         display: flex;
@@ -136,7 +139,7 @@ html, body {
         line-height: 0.5;
         text-align: center;
         font-weight: 400;
-        letter-spacing: .01em;
+        letter-spacing: .009em;
         font-family: "Roboto", sans-serif;
         margin: 0px;
     }
