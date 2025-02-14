@@ -62,16 +62,16 @@ html, body {
 
     .offers{
         width: 100vw;
+        justify-content: center;
         text-align: center;
+        align-items: center;
         margin-top: 43px;
         padding-top: 20px;
         font-size: 14px;
         background-color: #1D1D1F;
         color: white;
         display: flex;
-        padding-left: 400px;
         padding-bottom: 15px;
-        gap: 5px;
         padding-top: 15px;
         margin-bottom: 0;
     }
@@ -541,9 +541,19 @@ html, body {
             justify-content: space-between;
         }
 
-        .offer p{
-            margin-right: 30px;
+        .offer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
         }
+
+        .textbox{
+            left: 38%;
+        }
+        
+
 
     }
 }
