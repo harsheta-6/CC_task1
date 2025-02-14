@@ -37,6 +37,7 @@ html, body {
         padding-bottom: 10px;
         padding-left: 30px;
         padding-right: 30px;
+        z-index: 1000;
     }
 
     .navbar ul{
@@ -533,8 +534,16 @@ html, body {
 
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1248px){
     body{
+
+        [class*="navbar"]{
+            justify-content: space-between;
+        }
+
+        .offer p{
+            margin-right: 30px;
+        }
 
     }
 }
@@ -554,64 +563,73 @@ html, body {
     }
 }
 
-.menuopen{
-    display: none;
-}
+@media screen and (max-width:600px){
+    body{
+        [class*="image"]{
+            width: 100%;
+        }
 
-@media only screen and (max-width:600px){
-    .navbar ul {
-        display: none;
-    }
+        [class*="info"]{
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 11.5px;
+        }
 
-    .navbar ul{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-bottom: 40px;
-        position: absolute;
-        background-color: #161617;
-        opacity: 0%;
-    }
+        [class*="offers"]{
+            margin-top: 67px;
+            font-size: 15px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-bottom: 0;
+        }
 
-    .navbar ul li{
-        padding-top: 30px;
-    }
+        [class*="textbox"] {
+            top: 10%;
+            left: 25%;    
+        }
+    
+        [class*="phone-16-pro-heading"] {
+            font-size: 35px;
+        }
+    
+        [class*="iphone-16-pro-text"] {
+            font-size: 20px;
+        }
+    
+        [class*="textbox2"]{
+            margin-top: 200%;
+            left: 5%;
+        }
+    
+        [class*="iphone-16-pro-learn-more"] {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }    
+        [class*="iphone-16-pro-buy"] {
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        [class*="iphone-16-pro-text2"] {
+            font-size: 13px;
+        }
 
-    .menuopen{
-        display: block;
-        position: absolute;
-        right: 4%;
-        top: 25%;
-        height: 25px;
-    }
+        [class*="iphone-16-buy"] {
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        [class*="iphone-16-text2"] {
+            font-size: 13px;
+        }
 
-    .cross{
-        display: block;
-        position: absolute;
-        right: 4%;
-        height: 25px;
-    }
 
-    .navbar{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    [class*="image"]{
-        width: 100%;
-    }
-
-    .offers {
-        font: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .iphone-16-pro-heading{
         
     }
-
-
-        
-
 }
+
