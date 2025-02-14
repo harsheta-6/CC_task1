@@ -554,74 +554,40 @@ html, body {
     }
 }
 
-@media screen and (max-width:600px){
-    body{
-        [class*="image"]{
-            width: 100%;
-        }
+.menuopen{
+    display: none;
+}
 
-        [class*="info"]{
-            margin-left: 0px;
-            margin-right: 0px;
-            font-size: 11.5px;
-        }
-
-        [class*="offers"]{
-            margin-top: 67px;
-            font-size: 15px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 15px;
-            padding-top: 15px;
-            margin-bottom: 0;
-        }
-
-        [class*="textbox"] {
-            top: 10%;
-            left: 25%;    
-        }
-    
-        [class*="phone-16-pro-heading"] {
-            font-size: 35px;
-        }
-    
-        [class*="iphone-16-pro-text"] {
-            font-size: 20px;
-        }
-    
-        [class*="textbox2"]{
-            margin-top: 200%;
-            left: 1%;
-
-        }
-    
-        [class*="iphone-16-pro-learn-more"] {
-            font-size: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }    
-        [class*="iphone-16-pro-buy"] {
-            font-size: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    
-        [class*="iphone-16-pro-text2"] {
-            font-size: 13px;
-        }
-
-        [class*="textbox"] {
-            top: 10%;
-            left: 25%;    
-        }
-
-        [class*="phone-16-heading"] {
-            font-size: 35px;
-        }
-        [class*="iphone-16-text"] {
-            font-size: 20px;
-        }
-
-        
+@media only screen and (max-width:600px){
+    .navbar ul {
+        display: none;
     }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 40px;
+        position: absolute;
+        background-color: #161617;
+        opacity: 0%;
+    }
+
+    .navbar ul li{
+        padding-top: 30px;
+    }
+
+    .menuopen{
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 25%;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+        
+
 }
