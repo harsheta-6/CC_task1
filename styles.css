@@ -665,6 +665,14 @@ html, body {
             display: flex;
             flex-direction: column;
         }
+
+        [class*="textbox6"]{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+        }
     
         [class*="iphone-16-pro-learn-more"] {
             font-size: 15px;
