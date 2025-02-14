@@ -576,6 +576,39 @@ html, body {
             padding-top: 15px;
             margin-bottom: 0;
         }
+
+        [class*="textbox"] {
+            top: 10%;
+            left: 25%;    
+        }
+    
+        [class*="phone-16-pro-heading"] {
+            font-size: 35px;
+        }
+    
+        [class*="iphone-16-pro-text"] {
+            font-size: 20px;
+        }
+    
+        [class*="textbox2"]{
+            margin-top: 200%;
+            left: 5%;
+        }
+    
+        [class*="iphone-16-pro-learn-more"] {
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }    
+        [class*="iphone-16-pro-buy"] {
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        [class*="iphone-16-pro-text2"] {
+            font-size: 13px;
+        }
         
     }
 }
