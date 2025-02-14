@@ -468,6 +468,33 @@ html, body {
         background-image: url('./assests/macbook-air.png');
     }
 
+    .image-4{
+        width: 48%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./assests/ipad.png');
+    }
+
+    .image-5{
+        width: 48%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./assests/airpods.png');
+    }
+
+    .image-6{
+        width: 48%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./assests/apple-trade-in.png');
+    }
+
     .border4{
         background-color: white;
         height: 15px;
@@ -502,9 +529,11 @@ html, body {
         height: 15px;
     }
         
+/*---apple extra starting here--------------------*/
+ 
 
+}
 
-   
+@media screen {
     
-
 }
