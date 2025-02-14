@@ -359,11 +359,13 @@ html, body {
     }
 
     .textbox5{
-        margin-top: 13%;
+        margin-top: 0%;
+        padding-top: 28%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 43.5%;
+        margin-left: 15%;
+        padding-right: 10%;
     }
     
     .apple-watch-text {
