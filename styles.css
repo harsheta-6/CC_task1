@@ -104,7 +104,7 @@ html, body {
 
     .iphone-16-pro-bg {
         background: url('./assests/iphone-16-pro-bgg.png');
-        min-height: 100vh;
+        height: 100vh;
         width: 100vw;
         margin-top: 0;
         padding-top: 0;
@@ -359,7 +359,6 @@ html, body {
     }
 
     .textbox5{
-        position: absolute;
         margin-top: 13%;
         text-align: center;
         justify-content: center;
@@ -557,37 +556,55 @@ html, body {
         .iphone-16-pro-bg{
             background-size: 100%;
         }
-        
-
-
-    }
-}
-
-@media screen and (max-width:992px){
-    body{
-        
-    }
-}
-
-@media screen and (max-width:768px){
-    body{
-        [class*="image"]{
-            width: 100%;
+        .textbox2{
+            margin-top: 270%;
+            left: 8%;
         }
         
+
+
     }
 }
 
-@media screen and (max-width:600px){
+@media  screen and (max-width:430px) {
+
+    .iphone-16-pro-bg{
+        height: 50%;
+        width: 50%;
+    }
+
+    .navbar ul li{
+        display: none;
+    }
+
+    .offers p{
+        font-size: 13px;
+    }
+
+    .info{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+
+    .image{
+        width: 80%;
+    }
+
+
+    
+}
+
+@media screen and (max-width:430px){
     body{
         [class*="image"]{
-            width: 100%;
+            width: 100%;;
         }
 
         [class*="info"]{
             margin-left: 0px;
             margin-right: 0px;
-            font-size: 11.5px;
+            font-size: 10px;
         }
 
         [class*="offers"]{
@@ -601,21 +618,52 @@ html, body {
         }
 
         [class*="textbox"] {
-            top: 10%;
-            left: 25%;    
+            top: 15%;
+            left: 23%;    
         }
     
         [class*="phone-16-pro-heading"] {
             font-size: 35px;
         }
+
+        [class*="phone-16-heading"] {
+            font-size: 35px;
+        }
+
+        [class*="apple-watch-text"] {
+            font-size: 20px;
+        }
     
         [class*="iphone-16-pro-text"] {
             font-size: 20px;
         }
+
+        [class*="iphone-16-text"] {
+            font-size: 20px;
+        }
+
+        [class*="textbox3"] {
+            top: 15%;
+            left: 23%;    
+        }
     
         [class*="textbox2"]{
             margin-top: 200%;
-            left: 5%;
+            left: 1%;
+        }
+
+        [class*="textbox4"]{
+            margin-top: 250%;
+            left: 1%;
+        }
+
+        [class*="textbox5"]{
+            justify-content: center;
+            align-items: center;
+            padding-top: 60%;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
         }
     
         [class*="iphone-16-pro-learn-more"] {
