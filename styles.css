@@ -37,7 +37,6 @@ html, body {
         padding-bottom: 10px;
         padding-left: 30px;
         padding-right: 30px;
-        opacity: 90%;
     }
 
     .navbar ul{
@@ -592,7 +591,8 @@ html, body {
     
         [class*="textbox2"]{
             margin-top: 200%;
-            left: 5%;
+            left: 1%;
+
         }
     
         [class*="iphone-16-pro-learn-more"] {
@@ -609,6 +609,19 @@ html, body {
         [class*="iphone-16-pro-text2"] {
             font-size: 13px;
         }
+
+        [class*="textbox"] {
+            top: 10%;
+            left: 25%;    
+        }
+
+        [class*="phone-16-heading"] {
+            font-size: 35px;
+        }
+        [class*="iphone-16-text"] {
+            font-size: 20px;
+        }
+
         
     }
 }
