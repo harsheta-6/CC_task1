@@ -19,7 +19,7 @@
             <div class="logo">
                 <img src="./assests/Apple_logo_grey.svg.png" alt="logo">
             </div>  
-            <ul>
+            <ul id="nav-list">
                 <li>Store</li>
                 <li>Mac</li>
                 <li>iPad</li>
@@ -30,6 +30,7 @@
                 <li>Entertainment</li>
                 <li>Accessories</li>
                 <li>Support</li>
+                <img class="cross" src="./assests/close.png" alt="cross">
             </ul>
             <div class="nav-icons">
                 <img src="./assests/pngfind.com-search-icon-png-544757.png" alt="search">
@@ -116,7 +117,20 @@
     <div class="border5"></div>
 
 
-    <script src="./script.js" async defer></script>
+    <script>
+        let nav_list=document.getElementById('nav-list')
+        let openMenu=document.querySelector('.menuopen')
+        openMenu.addEventListener('click',()=>{
+            nav_list.style.opacity='100%'
+            openMenu.style.display='none'
+        })
+
+        cross.addEventListener('click',()=>{
+            nav_list.style.opacity='0%'
+            openMenu.style.display='block'
+        })
+
+    </script>
 </body>    
 
 <html>
