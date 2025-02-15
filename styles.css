@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: "SF Pro Display", sans-serif;
@@ -14,9 +15,6 @@ html, body {
     height: 100%;
     min-height: 100vh;
     align-items: center;
-    overflow-y: auto;
-    gap: 24px;
-    background-color: black;
 
     button {
         cursor: pointer;
@@ -42,27 +40,27 @@ html, body {
         opacity: 0.85;
     }
 
-    .navbar ul{
+    .navbar ul {
         display: flex;
         list-style: none;
     }
 
-    .navbar ul li{
+    .navbar ul li {
         margin-left: 35px;
         color: #CCCCCC;
-        font-family: "Roboto",sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 13px;
         gap: 10px;
         justify-content: space-between;
     }
 
-    .navbar ul li:hover{
+    .navbar ul li:hover {
         cursor: pointer;
         color: white;
         transition: color 0.5s ease-in-out;
     }
 
-    .offers{
+    .offers {
         width: 100vw;
         justify-content: center;
         text-align: center;
@@ -78,34 +76,35 @@ html, body {
         margin-bottom: 0;
     }
 
-    .offers .shop{
+    .offers .shop {
         color: #006DDA;
         font-size: 14px;
         cursor: pointer;
     }
 
-    .offers .shop:hover{
+    .offers .shop:hover {
         text-decoration: underline;
     }
 
 
-    .navbar .logo img{
+    .navbar .logo img {
         height: 18px;
     }
 
-    .navbar .nav-icons img{
+    .navbar .nav-icons img {
         height: 18px;
         margin-left: 19px;
     }
 
-/*---navigation bar ending here------------------*/
+    /*---navigation bar ending here------------------*/
 
     /*---iphone 16 pro starting here------------------*/
 
     .iphone-16-pro-bg {
-        background: url('./assests/iphone-16-pro-bgg.png');
+        background: url('./assests/iphone-16-pro_overview__ejy873nl8yi6_og.png');
         height: 100vh;
         width: 100vw;
+        max-width: 100%;
         margin-top: 0;
         padding-top: 0;
         cursor: pointer;
@@ -153,7 +152,7 @@ html, body {
         margin: 0px;
     }
 
-    .textbox2{
+    .textbox2 {
         position: absolute;
         margin-top: 300%;
         text-align: center;
@@ -179,14 +178,14 @@ html, body {
         margin-bottom: 7px;
     }
 
-    .iphone-16-pro-learn-more:hover{
+    .iphone-16-pro-learn-more:hover {
         background-color: #167ce3;
     }
 
     .iphone-16-pro-buy {
         font-size: 17px;
-        background-color: rgba(0,0,0,0);
-        color:#2997ff;
+        background-color: rgba(0, 0, 0, 0);
+        color: #2997ff;
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
@@ -202,8 +201,8 @@ html, body {
         padding-bottom: 11px;
     }
 
-    .iphone-16-pro-buy:hover{
-        background-color:#0071e3;
+    .iphone-16-pro-buy:hover {
+        background-color: #0071e3;
         border-color: #0071e3;
         color: white;
     }
@@ -215,10 +214,10 @@ html, body {
         font-weight: 400;
         letter-spacing: -.016em;
         font-family: "Roboto", sans-serif;
-        color:#86868b;
+        color: #86868b;
     }
 
-    .border1{
+    .border1 {
         background-color: white;
         height: 15px;
     }
@@ -231,6 +230,7 @@ html, body {
         background: url('./assests/iphone-16.png');
         min-height: 100vh;
         width: 100vw;
+        max-width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
@@ -274,7 +274,7 @@ html, body {
         margin: 0px;
     }
 
-    .textbox4{
+    .textbox4 {
         position: absolute;
         margin-top: 370%;
         text-align: center;
@@ -300,14 +300,14 @@ html, body {
         margin-bottom: 7px;
     }
 
-    .iphone-16-learn-more:hover{
+    .iphone-16-learn-more:hover {
         background-color: #167ce3;
     }
 
     .iphone-16-buy {
         font-size: 17px;
-        background-color: rgba(0,0,0,0);
-        color:#2997ff;
+        background-color: rgba(0, 0, 0, 0);
+        color: #2997ff;
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
@@ -323,8 +323,8 @@ html, body {
         padding-bottom: 11px;
     }
 
-    .iphone-16-buy:hover{
-        background-color:#0071e3;
+    .iphone-16-buy:hover {
+        background-color: #0071e3;
         border-color: #0071e3;
         color: white;
     }
@@ -336,38 +336,43 @@ html, body {
         font-weight: 400;
         letter-spacing: -.016em;
         font-family: "Roboto", sans-serif;
-        color:#86868b;
+        color: #86868b;
     }
 
-    .border2{
+    .border2 {
         background-color: white;
         height: 15px;
     }
 
-/*---iphone 16 ending here----------------------*/
+    /*---iphone 16 ending here----------------------*/
 
-/*---apple watch starting here--------------------*/
+    /*---apple watch starting here--------------------*/
 
     .apple-watch-bg {
-        background: url('./assests/apple-watch-10-bg.png');
+        background: url('./assests/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_small_2x.jpg');
         min-height: 100vh;
         width: 100vw;
+        max-width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        background-position: center;  
+        background-position: center;
     }
 
-    .textbox5{
+    .textbox5 {
         margin-top: 0%;
-        padding-top: 13%;
+        padding-top: 10%;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 15%;
+        margin-left: 13%;
         padding-right: 12%;
     }
-    
+
+    .watch-logo{
+        z-index: 200;
+    }
+
     .apple-watch-text {
         color: black;
         font-size: 28px;
@@ -397,14 +402,14 @@ html, body {
         margin-bottom: 7px;
     }
 
-    .apple-watch-learn-more:hover{
+    .apple-watch-learn-more:hover {
         background-color: #167ce3;
     }
 
     .apple-watch-buy {
         font-size: 17px;
-        background-color: rgba(0,0,0,0);
-        color:#2997ff;
+        background-color: rgba(0, 0, 0, 0);
+        color: #2997ff;
         border-width: 1px;
         border-style: solid;
         border-color: #2997ff;
@@ -420,41 +425,46 @@ html, body {
         padding-bottom: 11px;
     }
 
-    .apple-watch-buy:hover{
-        background-color:#0071e3;
+    .apple-watch-buy:hover {
+        background-color: #0071e3;
         border-color: #0071e3;
         color: white;
     }
 
-    .border3{
+    .border3 {
         background-color: white;
         height: 15px;
     }
-    
-/*---apple watch ending here--------------------*/
 
-/*---apple extra starting here--------------------*/
+    /*---apple watch ending here--------------------*/
 
-    .image-flex{
+    /*---apple extra starting here--------------------*/
+
+    .image-flex {
         width: 100%;
-        max-width: 100vw;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 16px;
         flex-wrap: wrap;
-        
+
     }
 
-    .image{
+    .image-flex img{
+        width: 100%;
+        height: auto;
+    }
+
+    .macbook-air {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         background-image: url('./assests/apple-watch-extra.png');
     }
-    
-    .image-2{
+
+    .apple-watch {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
@@ -463,7 +473,7 @@ html, body {
         background-image: url('./assests/apple-valentine.png');
     }
 
-    .image-3{
+    .airpod {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
@@ -472,7 +482,7 @@ html, body {
         background-image: url('./assests/macbook-air.png');
     }
 
-    .image-4{
+    .ipad {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
@@ -481,7 +491,7 @@ html, body {
         background-image: url('./assests/ipad.png');
     }
 
-    .image-5{
+    .macbook-pro {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
@@ -490,7 +500,7 @@ html, body {
         background-image: url('./assests/airpods.png');
     }
 
-    .image-6{
+    .iphone-tradein {
         width: 48%;
         height: 80vh;
         background-repeat: no-repeat;
@@ -499,7 +509,7 @@ html, body {
         background-image: url('./assests/apple-trade-in.png');
     }
 
-    .border4{
+    .border4 {
         background-color: white;
         height: 15px;
     }
@@ -528,19 +538,19 @@ html, body {
         margin-right: 300px;
     }
 
-    .border5{
+    .border5 {
         background-color: white;
         height: 15px;
     }
-        
-/*---apple extra ending here--------------------*/
+
+    /*---apple extra ending here--------------------*/
 
 }
 
-@media screen and (max-width:1248px){
-    body{
+@media screen and (max-width:1248px) {
+    body {
 
-        [class*="navbar"]{
+        [class*="navbar"] {
             justify-content: space-between;
         }
 
@@ -552,64 +562,71 @@ html, body {
             width: 100%;
         }
 
-        .textbox{
+        .textbox {
             left: 38%;
         }
-        .iphone-16-pro-bg{
+
+        .iphone-16-pro-bg {
             background-size: 100%;
         }
-        .textbox2{
+
+        .textbox2 {
             margin-top: 270%;
             left: 8%;
         }
-        
+
 
 
     }
 }
 
-@media  screen and (max-width:430px) {
+@media (max-width:768px){
+    
+}
 
-    .iphone-16-pro-bg{
+@media screen and (max-width:430px) {
+
+    .iphone-16-pro-bg {
         height: 50%;
         width: 50%;
     }
 
-    .navbar ul li{
+    .navbar ul li {
         display: none;
     }
 
-    .offers p{
+    .offers p {
         font-size: 13px;
     }
 
-    .info{
+    .info {
         margin-left: 0px;
         margin-right: 0px;
         font-size: 10px;
     }
 
-    .image{
+    .image {
         width: 80%;
     }
 
 
-    
+
 }
 
-@media screen and (max-width:430px){
-    body{
-        [class*="image"]{
-            width: 100%;;
+@media screen and (max-width:430px) {
+    body {
+        [class*="image"] {
+            width: 100%;
+            ;
         }
 
-        [class*="info"]{
+        [class*="info"] {
             margin-left: 0px;
             margin-right: 0px;
             font-size: 10px;
         }
 
-        [class*="offers"]{
+        [class*="offers"] {
             margin-top: 67px;
             font-size: 15px;
             padding-left: 0px;
@@ -621,9 +638,9 @@ html, body {
 
         [class*="textbox"] {
             top: 15%;
-            left: 23%;    
+            left: 23%;
         }
-    
+
         [class*="phone-16-pro-heading"] {
             font-size: 35px;
         }
@@ -635,7 +652,7 @@ html, body {
         [class*="apple-watch-text"] {
             font-size: 20px;
         }
-    
+
         [class*="iphone-16-pro-text"] {
             font-size: 20px;
         }
@@ -646,20 +663,20 @@ html, body {
 
         [class*="textbox3"] {
             top: 15%;
-            left: 23%;    
+            left: 23%;
         }
-    
-        [class*="textbox2"]{
+
+        [class*="textbox2"] {
             margin-top: 200%;
             left: 1%;
         }
 
-        [class*="textbox4"]{
+        [class*="textbox4"] {
             margin-top: 250%;
             left: 1%;
         }
 
-        [class*="textbox5"]{
+        [class*="textbox5"] {
             justify-content: center;
             align-items: center;
             padding-top: 60%;
@@ -668,25 +685,26 @@ html, body {
             flex-direction: column;
         }
 
-        [class*="textbox6"]{
+        [class*="textbox6"] {
             justify-content: center;
             align-items: center;
             display: flex;
             flex-direction: row;
 
         }
-    
+
         [class*="iphone-16-pro-learn-more"] {
             font-size: 15px;
             padding-left: 10px;
             padding-right: 10px;
-        }    
+        }
+
         [class*="iphone-16-pro-buy"] {
             font-size: 15px;
             padding-left: 15px;
             padding-right: 15px;
         }
-    
+
         [class*="iphone-16-pro-text2"] {
             font-size: 13px;
         }
@@ -696,13 +714,12 @@ html, body {
             padding-left: 15px;
             padding-right: 15px;
         }
-    
+
         [class*="iphone-16-text2"] {
             font-size: 13px;
         }
 
 
-        
+
     }
 }
-
