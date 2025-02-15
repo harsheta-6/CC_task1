@@ -1,725 +1,722 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display", sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  overflow-y: auto;
+  gap: 24px;
+  background-color: black;
+
+  button {
+    cursor: pointer;
+  }
+
+  /*---navigation bar starting here-------------------------*/
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    margin-bottom: 0;
     margin: 0;
     padding: 0;
-    font-family: "SF Pro Display", sans-serif;
+    justify-content: center;
+    padding-top: 15px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 1000;
+    opacity: 0.85;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar ul li {
+    margin-left: 35px;
+    color: #cccccc;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .navbar ul li:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .offers {
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 43px;
+    padding-top: 20px;
+    font-size: 14px;
+    background-color: #1d1d1f;
+    color: white;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .offers .shop {
+    color: #006dda;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .offers .shop:hover {
+    text-decoration: underline;
+  }
+
+  .navbar .logo img {
+    height: 18px;
+  }
+
+  .navbar .nav-icons img {
+    height: 18px;
+    margin-left: 19px;
+  }
+
+  /*---navigation bar ending here------------------*/
+
+  /*---iphone 16 pro starting here------------------*/
+
+  .iphone-16-pro-bg {
+    background: url("./assests/iphone-16-pro-bgg.png");
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+  }
+
+  .textbox {
+    position: absolute;
+    top: 10%;
+    left: 39%;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iphone-16-pro-heading {
+    color: white;
+    font-size: 55px;
+    line-height: 1.08349;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.002em;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .iphone-16-pro-text {
+    color: white;
+    font-size: 27px;
+    line-height: 0.5;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.009em;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+
+  .textbox2 {
+    position: absolute;
+    margin-top: 300%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iphone-16-pro-learn-more {
+    background-color: #0071e3;
+    color: white;
+    line-height: 1.42859;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    letter-spacing: -0.016em;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+
+  .iphone-16-pro-learn-more:hover {
+    background-color: #167ce3;
+  }
+
+  .iphone-16-pro-buy {
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #2997ff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2997ff;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.42859;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    min-width: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .iphone-16-pro-buy:hover {
+    background-color: #0071e3;
+    border-color: #0071e3;
+    color: white;
+  }
+
+  .iphone-16-pro-text2 {
+    font-size: 15px;
+    margin-top: 16px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family: "Roboto", sans-serif;
+    color: #86868b;
+  }
+
+  .border1 {
+    background-color: white;
+    height: 15px;
+  }
+
+  /*---iphone 16 pro ending here---------------------*/
+
+  /*---iphone 16 starting here-------------------------*/
+
+  .iphone-16-bg {
+    background: url("./assests/iphone-16.jpg");
+    min-height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .textbox3 {
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iphone-16-heading {
+    color: white;
+    font-size: 57px;
+    line-height: 0.7;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.002em;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .iphone-16-text {
+    color: white;
+    font-size: 27px;
+    line-height: 1.21053;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.008em;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+
+  .textbox4 {
+    position: absolute;
+    margin-top: 370%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iphone-16-learn-more {
+    background-color: #0071e3;
+    color: white;
+    line-height: 1.42859;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    letter-spacing: -0.016em;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+
+  .iphone-16-learn-more:hover {
+    background-color: #167ce3;
+  }
+
+  .iphone-16-buy {
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #2997ff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2997ff;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.42859;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    min-width: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .iphone-16-buy:hover {
+    background-color: #0071e3;
+    border-color: #0071e3;
+    color: white;
+  }
+
+  .iphone-16-text2 {
+    font-size: 15px;
+    margin-top: 16px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family: "Roboto", sans-serif;
+    color: #86868b;
+  }
+
+  .border2 {
+    background-color: white;
+    height: 15px;
+  }
+
+  /*---iphone 16 ending here----------------------*/
+
+  /*---apple watch starting here--------------------*/
+
+  .apple-watch-bg {
+    background: url("./assests/apple-watch-10-bg.png");
+    min-height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+  }
+
+  .textbox5 {
+    padding-top: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textbox5-a {
+    padding-top: 12.5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 20%;
+    left: 42.5%;
+  }
+
+  .buttons-1 {
+    position: absolute;
+    bottom: 10%;
+    left: 42.5%;
+  }
+
+  .apple-watch-text {
+    color: black;
+    font-size: 28px;
+    line-height: 2.5;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+
+  .apple-watch-learn-more {
+    background-color: #0071e3;
+    color: white;
+    line-height: 1.42859;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    letter-spacing: -0.016em;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+
+  .apple-watch-learn-more:hover {
+    background-color: #167ce3;
+  }
+
+  .apple-watch-buy {
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #2997ff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2997ff;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.42859;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    min-width: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .apple-watch-buy:hover {
+    background-color: #0071e3;
+    border-color: #0071e3;
+    color: white;
+  }
+
+  .border3 {
+    background-color: white;
+    height: 15px;
+  }
+
+  /*---apple watch ending here--------------------*/
+
+  /*---apple extra starting here--------------------*/
+
+  .image-flex {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+  .image {
+    width: 48%;
+    height: 75vh;
+    overflow: hidden;
+  }
+
+  .image img {
     width: 100%;
     height: 100%;
-    min-height: 100vh;
-    align-items: center;
+    display: block;
+  }
 
-    button {
-        cursor: pointer;
+  .border4 {
+    background-color: white;
+    height: 15px;
+  }
+
+  .additional-info {
+    background-color: #f5f5f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+  }
+
+  .info {
+    font-size: 13px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    color: #6c6c6c;
+    letter-spacing: -0.01em;
+    font-family: "Roboto", sans-serif;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .border5 {
+    background-color: white;
+    height: 15px;
+  }
+
+  /*---apple extra ending here--------------------*/
+}
+
+@media screen and (max-width: 1248px) {
+  body {
+    [class*="navbar"] {
+      justify-content: space-between;
     }
 
-    /*---navigation bar starting here-------------------------*/
-
-    .navbar {
-        position: fixed;
-        top: 0;
-        display: flex;
-        margin-bottom: 0;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        padding-top: 15px;
-        background-color: rgb(0, 0, 0);
-        width: 100%;
-        padding-bottom: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        z-index: 1000;
-        opacity: 0.85;
-    }
-
-    .navbar ul {
-        display: flex;
-        list-style: none;
-    }
-
-    .navbar ul li {
-        margin-left: 35px;
-        color: #CCCCCC;
-        font-family: "Roboto", sans-serif;
-        font-size: 13px;
-        gap: 10px;
-        justify-content: space-between;
-    }
-
-    .navbar ul li:hover {
-        cursor: pointer;
-        color: white;
-        transition: color 0.5s ease-in-out;
-    }
-
-    .offers {
-        width: 100vw;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-top: 43px;
-        padding-top: 20px;
-        font-size: 14px;
-        background-color: #1D1D1F;
-        color: white;
-        display: flex;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        margin-bottom: 0;
-    }
-
-    .offers .shop {
-        color: #006DDA;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .offers .shop:hover {
-        text-decoration: underline;
-    }
-
-
-    .navbar .logo img {
-        height: 18px;
-    }
-
-    .navbar .nav-icons img {
-        height: 18px;
-        margin-left: 19px;
-    }
-
-    /*---navigation bar ending here------------------*/
-
-    /*---iphone 16 pro starting here------------------*/
-
-    .iphone-16-pro-bg {
-        background: url('./assests/iphone-16-pro_overview__ejy873nl8yi6_og.png');
-        height: 100vh;
-        width: 100vw;
-        max-width: 100%;
-        margin-top: 0;
-        padding-top: 0;
-        cursor: pointer;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: center;
-        display: block;
+    .offer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
     }
 
     .textbox {
-        position: absolute;
-        top: 10%;
-        left: 39%;
-        cursor: pointer;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+      left: 38%;
     }
-
-    .iphone-16-pro-heading {
-        color: white;
-        font-size: 55px;
-        line-height: 1.08349;
-        text-align: center;
-        font-weight: 500;
-        letter-spacing: -.002em;
-        font-family: "Roboto", sans-serif;
-        margin: 0px;
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .iphone-16-pro-text {
-        color: white;
-        font-size: 27px;
-        line-height: 0.5;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing: .009em;
-        font-family: "Roboto", sans-serif;
-        margin: 0px;
-    }
-
-    .textbox2 {
-        position: absolute;
-        margin-top: 300%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .iphone-16-pro-learn-more {
-        background-color: #0071e3;
-        color: white;
-        line-height: 1.42859;
-        font-weight: 400;
-        font-size: 17px;
-        border: none;
-        border-radius: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: "Roboto", sans-serif;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        letter-spacing: -.016em;
-        margin-right: 10px;
-        margin-bottom: 7px;
-    }
-
-    .iphone-16-pro-learn-more:hover {
-        background-color: #167ce3;
-    }
-
-    .iphone-16-pro-buy {
-        font-size: 17px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #2997ff;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #2997ff;
-        font-family: "Roboto", sans-serif;
-        line-height: 1.42859;
-        border-radius: 50px;
-        font-weight: 400;
-        letter-spacing: -.016em;
-        min-width: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
-    .iphone-16-pro-buy:hover {
-        background-color: #0071e3;
-        border-color: #0071e3;
-        color: white;
-    }
-
-    .iphone-16-pro-text2 {
-        font-size: 15px;
-        margin-top: 16px;
-        line-height: 1.28577;
-        font-weight: 400;
-        letter-spacing: -.016em;
-        font-family: "Roboto", sans-serif;
-        color: #86868b;
-    }
-
-    .border1 {
-        background-color: white;
-        height: 15px;
-    }
-
-    /*---iphone 16 pro ending here---------------------*/
-
-    /*---iphone 16 starting here-------------------------*/
-
-    .iphone-16-bg {
-        background: url('./assests/iphone-16.png');
-        min-height: 100vh;
-        width: 100vw;
-        max-width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: center;
-        cursor: pointer;
-    }
-
-    .textbox3 {
-        position: absolute;
-        top: 8%;
-        left: 40%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .iphone-16-heading {
-        color: white;
-        font-size: 57px;
-        line-height: 0.7;
-        text-align: center;
-        font-weight: 600;
-        letter-spacing: -.002em;
-        font-family: "Roboto", sans-serif;
-        margin: 0px;
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .iphone-16-text {
-        color: white;
-        font-size: 27px;
-        line-height: 1.21053;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing: .008em;
-        font-family: "Roboto", sans-serif;
-        margin: 0px;
-    }
-
-    .textbox4 {
-        position: absolute;
-        margin-top: 370%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .iphone-16-learn-more {
-        background-color: #0071e3;
-        color: white;
-        line-height: 1.42859;
-        font-weight: 400;
-        font-size: 17px;
-        border: none;
-        border-radius: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: "Roboto", sans-serif;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        letter-spacing: -.016em;
-        margin-right: 10px;
-        margin-bottom: 7px;
-    }
-
-    .iphone-16-learn-more:hover {
-        background-color: #167ce3;
-    }
-
-    .iphone-16-buy {
-        font-size: 17px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #2997ff;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #2997ff;
-        font-family: "Roboto", sans-serif;
-        line-height: 1.42859;
-        border-radius: 50px;
-        font-weight: 400;
-        letter-spacing: -.016em;
-        min-width: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
-    .iphone-16-buy:hover {
-        background-color: #0071e3;
-        border-color: #0071e3;
-        color: white;
-    }
-
-    .iphone-16-text2 {
-        font-size: 15px;
-        margin-top: 16px;
-        line-height: 1.28577;
-        font-weight: 400;
-        letter-spacing: -.016em;
-        font-family: "Roboto", sans-serif;
-        color: #86868b;
-    }
-
-    .border2 {
-        background-color: white;
-        height: 15px;
-    }
-
-    /*---iphone 16 ending here----------------------*/
-
-    /*---apple watch starting here--------------------*/
-
-    .apple-watch-bg {
-        background: url('./assests/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_small_2x.jpg');
-        min-height: 100vh;
-        width: 100vw;
-        max-width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: center;
-    }
-
-    .textbox5 {
-        margin-top: 0%;
-        padding-top: 10%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 13%;
-        padding-right: 12%;
-    }
-
-    .watch-logo{
-        z-index: 200;
-    }
-
-    .apple-watch-text {
-        color: black;
-        font-size: 28px;
-        line-height: 2.5;
-        text-align: center;
-        font-weight: 400;
-        letter-spacing: .012em;
-        font-family: "Roboto", sans-serif;
-        margin: 0px;
-    }
-
-    .apple-watch-learn-more {
-        background-color: #0071e3;
-        color: white;
-        line-height: 1.42859;
-        font-weight: 400;
-        font-size: 17px;
-        border: none;
-        border-radius: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: "Roboto", sans-serif;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        letter-spacing: -.016em;
-        margin-right: 10px;
-        margin-bottom: 7px;
-    }
-
-    .apple-watch-learn-more:hover {
-        background-color: #167ce3;
-    }
-
-    .apple-watch-buy {
-        font-size: 17px;
-        background-color: rgba(0, 0, 0, 0);
-        color: #2997ff;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #2997ff;
-        font-family: "Roboto", sans-serif;
-        line-height: 1.42859;
-        border-radius: 50px;
-        font-weight: 400;
-        letter-spacing: -.016em;
-        min-width: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
-    .apple-watch-buy:hover {
-        background-color: #0071e3;
-        border-color: #0071e3;
-        color: white;
-    }
-
-    .border3 {
-        background-color: white;
-        height: 15px;
-    }
-
-    /*---apple watch ending here--------------------*/
-
-    /*---apple extra starting here--------------------*/
-
-    .image-flex {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-
-    }
-
-    .image-flex img{
-        width: 100%;
-        height: auto;
-    }
-
-    .macbook-air {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('./assests/apple-watch-extra.png');
-    }
-
-    .apple-watch {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('./assests/apple-valentine.png');
-    }
-
-    .airpod {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('./assests/macbook-air.png');
-    }
-
-    .ipad {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('./assests/ipad.png');
-    }
-
-    .macbook-pro {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('./assests/airpods.png');
-    }
-
-    .iphone-tradein {
-        width: 48%;
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('./assests/apple-trade-in.png');
-    }
-
-    .border4 {
-        background-color: white;
-        height: 15px;
-    }
-
-    .additional-info {
-        background-color: #F5F5F7;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 10px;
-
-    }
-
-    .info {
-        font-size: 13px;
-        line-height: 1.3333733333;
-        font-weight: 400;
-        color: #6C6C6C;
-        letter-spacing: -0.01em;
-        font-family: "Roboto", sans-serif;
-        gap: 10px;
-        justify-content: center;
-        margin-bottom: 0.8rem;
-        margin-left: 300px;
-        margin-right: 300px;
-    }
-
-    .border5 {
-        background-color: white;
-        height: 15px;
-    }
-
-    /*---apple extra ending here--------------------*/
-
-}
-
-@media screen and (max-width:1248px) {
-    body {
-
-        [class*="navbar"] {
-            justify-content: space-between;
-        }
-
-        .offer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-        }
-
-        .textbox {
-            left: 38%;
-        }
-
-        .iphone-16-pro-bg {
-            background-size: 100%;
-        }
-
-        .textbox2 {
-            margin-top: 270%;
-            left: 8%;
-        }
-
-
-
-    }
-}
-
-@media (max-width:768px){
-    
-}
-
-@media screen and (max-width:430px) {
-
     .iphone-16-pro-bg {
-        height: 50%;
-        width: 50%;
+      background-size: 100%;
+    }
+    .textbox2 {
+      margin-top: 270%;
+      left: 8%;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .iphone-16-pro-bg {
+    height: 50%;
+    width: 50%;
+  }
+
+  .navbar ul li {
+    display: none;
+  }
+
+  .offers p {
+    font-size: 13px;
+  }
+
+  .info {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+
+  .image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    [class*="image"] {
+      width: 100%;
     }
 
-    .navbar ul li {
-        display: none;
+    [class*="info"] {
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 10px;
     }
 
-    .offers p {
-        font-size: 13px;
+    [class*="offers"] {
+      margin-top: 67px;
+      font-size: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin-bottom: 0;
     }
 
-    .info {
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 10px;
+    [class*="textbox"] {
+      top: 15%;
+      left: 23%;
+    }
+
+    [class*="phone-16-pro-heading"] {
+      font-size: 35px;
+    }
+
+    [class*="phone-16-heading"] {
+      font-size: 35px;
+    }
+
+    [class*="apple-watch-text"] {
+      font-size: 20px;
+    }
+
+    [class*="iphone-16-pro-text"] {
+      font-size: 20px;
+    }
+
+    [class*="iphone-16-text"] {
+      font-size: 20px;
+    }
+
+    [class*="textbox3"] {
+      top: 15%;
+      left: 23%;
+    }
+
+    [class*="textbox2"] {
+      margin-top: 200%;
+      left: 1%;
+    }
+
+    [class*="textbox4"] {
+      margin-top: 250%;
+      left: 1%;
+    }
+
+    [class*="textbox5"] {
+      justify-content: center;
+      align-items: center;
+      padding-top: 60%;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    [class*="textbox6"] {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+
+    [class*="iphone-16-pro-learn-more"] {
+      font-size: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    [class*="iphone-16-pro-buy"] {
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    [class*="iphone-16-pro-text2"] {
+      font-size: 13px;
+    }
+
+    [class*="iphone-16-buy"] {
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    [class*="iphone-16-text2"] {
+      font-size: 13px;
     }
 
     .image {
-        width: 80%;
+      height: 50vh;
     }
 
-
-
-}
-
-@media screen and (max-width:430px) {
-    body {
-        [class*="image"] {
-            width: 100%;
-            ;
-        }
-
-        [class*="info"] {
-            margin-left: 0px;
-            margin-right: 0px;
-            font-size: 10px;
-        }
-
-        [class*="offers"] {
-            margin-top: 67px;
-            font-size: 15px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 15px;
-            padding-top: 15px;
-            margin-bottom: 0;
-        }
-
-        [class*="textbox"] {
-            top: 15%;
-            left: 23%;
-        }
-
-        [class*="phone-16-pro-heading"] {
-            font-size: 35px;
-        }
-
-        [class*="phone-16-heading"] {
-            font-size: 35px;
-        }
-
-        [class*="apple-watch-text"] {
-            font-size: 20px;
-        }
-
-        [class*="iphone-16-pro-text"] {
-            font-size: 20px;
-        }
-
-        [class*="iphone-16-text"] {
-            font-size: 20px;
-        }
-
-        [class*="textbox3"] {
-            top: 15%;
-            left: 23%;
-        }
-
-        [class*="textbox2"] {
-            margin-top: 200%;
-            left: 1%;
-        }
-
-        [class*="textbox4"] {
-            margin-top: 250%;
-            left: 1%;
-        }
-
-        [class*="textbox5"] {
-            justify-content: center;
-            align-items: center;
-            padding-top: 60%;
-            margin-left: 10%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        [class*="textbox6"] {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-
-        }
-
-        [class*="iphone-16-pro-learn-more"] {
-            font-size: 15px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        [class*="iphone-16-pro-buy"] {
-            font-size: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        [class*="iphone-16-pro-text2"] {
-            font-size: 13px;
-        }
-
-        [class*="iphone-16-buy"] {
-            font-size: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        [class*="iphone-16-text2"] {
-            font-size: 13px;
-        }
-
-
-
+    .apple-watch-bg {
+      background: url("./assests/apple-watch-10-bg.png");
+      background-size: 120%;
+      min-height: 50vh;
+      width: 100vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: center;
     }
+
+    .iphone-16-pro-bg {
+      background: url("./assests/iphone-16-pro-bgg.png");
+      height: 50vh;
+      width: 100vw;
+      margin-top: 0;
+      padding-top: 0;
+      cursor: pointer;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: center;
+      display: block;
+    }
+
+    .iphone-16-bg {
+      background: url("./assests/iphone-16.jpg");
+      min-height: 50vh;
+      width: 100vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    .textbox-5 {
+      padding-right: 40%;
+    }
+
+    .textbox5-a {
+      padding-top: 30%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10%;
+    }
+
+    .buttons, .buttons-1 {
+        left: 25%;
+    }
+  }
 }
